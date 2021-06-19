@@ -11,7 +11,7 @@ body {
 
 .banner {
         height: 270px;        
-        background-image: url(../Imagenes/JuanaBanana.jpeg);
+        background-image: url(../imagenes/juanaBanana.jpeg);
         background-size: cover;
         background-position: center;        
 }
