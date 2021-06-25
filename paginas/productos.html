@@ -5,36 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Productos</title>
+    <style>
+        #carouselExampleControls {
+                      
+            width: 400px;
+            margin-left: 450px;
+        }
+    </style>
 
 </head>
 
 <body>
-    <!--Titulo pagina-->
-    <h1>
-        Productos
-    </h1>
+
 
     <!--Barra de navegacion-->
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./carrito.html">Carrito</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./info.html">Info</a></li>
-        </ul>
+    <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Productos</li>
+        </ol>
     </nav>
+
     <!--Barra de busqueda-->
     <div>
-        <ul>
-            <li>Pantalones</li>
-            <li>Pantuflas</li>
-            <li>Pijamas</li>
-            <li>Medias</li>
-            <li>Mantas</li>
-            <li>Batas</li>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Pantalones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pantuflas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pijamas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Medias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Mantas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Batas</a>
+            </li>
         </ul>
+
+
     </div>
     <!--Filtrar por/ Ordenar por-->
     <Select name="" id="filtrarPor">
@@ -52,18 +70,40 @@
         <option value="">Mas vendidos</option>
         <option value="">A - Z</option>
     </select>
-    <br>
+
     <!--Imagenes-->
-    <img src="../imagenes/bataYPantalonPolar.png">
-    <img src="../imagenes/pantalonPolarBlanco.png">
-    <img src="../imagenes/pantalonPolarNegro.png">
-    <img src="../imagenes/pantalonPolarRosa.png">
-    <img src="../imagenes/pantuflasKoala.png">
-    <img src="../imagenes/pantuflasHP.png">
-    <img src="../imagenes/polarAzul.png">
-    <img src="../imagenes/polarGris.png">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../imagenes/bataYPantalonPolar.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="../imagenes/pantalonPolarBlanco.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="../imagenes/polarGris.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="../imagenes/polarAzul.png" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
