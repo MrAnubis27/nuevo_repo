@@ -1,0 +1,202 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  background-color: #feedb6;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  height: 270px;
+  background-image: url(../imagenes/juanaBanana.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.menu {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(gray));
+  background-image: linear-gradient(to right, black, gray);
+  height: 50px;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.menu ul li {
+  width: 20%;
+  text-align: center;
+  border-right: 1px solid white;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.menu ul li:hover {
+  width: 20%;
+  text-align: center;
+  border-right: 1px solid white;
+  background-color: #feedb6;
+}
+
+.parrafo {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-family: 'Righteous';
+}
+
+#gridImagenes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 250px 250px 250px;
+      grid-template-columns: 250px 250px 250px 250px;
+  -ms-grid-rows: 250px 250px;
+      grid-template-rows: 250px 250px;
+  row-gap: 60px;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+      grid-template-areas: "imagen1 imagen2 imagen3 imagen4" "imagen5 imagen6 imagen7 imagen8";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 300px;
+}
+
+.imagenUno {
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imagen1;
+}
+
+.imagenDos {
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: imagen2;
+}
+
+.imagenUno:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin-left: 100px;
+}
+
+.imagenTres {
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: imagen3;
+}
+
+.imagenCuatro {
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: imagen4;
+}
+
+.imagenCinco {
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: imagen5;
+}
+
+.imagenSeis {
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: imagen6;
+}
+
+.imagenSiete {
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: imagen7;
+}
+
+.imagenOcho {
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: imagen8;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, right top, left top, from(black), to(gray));
+  background-image: linear-gradient(to left, black, gray);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #gridImagenes {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+        grid-template-areas: "foto1"
+ "foto2"
+ "foto3"
+ "foto4"
+ "foto5" 
+ "foto6" 
+ "foto7"
+ "foto8";
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=prueba.css.map */
